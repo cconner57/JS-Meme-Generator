@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+form input:focus, form button:focus, form button:hover {
+  outline: none;
+  background: #ffffff;
+  border-color: #40c4ff;
+  -webkit-box-shadow: 0 0 10px #40c4ff;
+          box-shadow: 0 0 10px #40c4ff;
+}
+
+h1 {
+  margin: 25px 0;
+  text-align: center;
+  font-size: 2.5rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  font-family: 'Permanent Marker', cursive;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+  padding: 25px 0;
+  max-width: 500px;
+  height: 300px;
+  border-radius: 50px;
+  background: #ffffff;
+  -webkit-box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
+          box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
+}
+
+form input {
+  width: 375px;
+  margin: 0 auto;
+  padding: 10px;
+  border: 1px solid lightgray;
+  border-radius: 50px;
+  background: linear-gradient(145deg, #ffffff, #e6e6e6);
+  -webkit-box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
+          box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
+}
+
+form input::-webkit-input-placeholder {
+  font-weight: bold;
+}
+
+form input:-ms-input-placeholder {
+  font-weight: bold;
+}
+
+form input::-ms-input-placeholder {
+  font-weight: bold;
+}
+
+form input::placeholder {
+  font-weight: bold;
+}
+
+form button {
+  width: 150px;
+  margin: 0 auto;
+  padding: 15px;
+  border: 1px solid lightgray;
+  border-radius: 50px;
+  background: linear-gradient(145deg, #ffffff, #e6e6e6);
+  -webkit-box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
+          box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: linear-gradient(145deg, #e6e6e6, #ffffff);
+}
+
+hr {
+  margin: 35px 10% 0;
+  border: 2px solid #40c4ff;
+  border-radius: 15px;
+  opacity: 0;
+  -webkit-transition: ease 0.75s;
+  transition: ease 0.75s;
+}
+
+.message {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  opacity: 0;
+  margin: 15px auto;
+  padding: 10px 20px;
+  width: 200px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  border: 1px solid lightgray;
+  border-radius: 50px;
+  background: linear-gradient(145deg, #ffffff, #e6e6e6);
+  -webkit-box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
+          box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
+}
+
+.memes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+.memes .meme {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  margin-top: 25px;
+  text-align: center;
+  border: 1px solid lightskyblue;
+  border-radius: 15px;
+  width: 250px;
+  height: 250px;
+  cursor: pointer;
+}
+
+.memes .meme .top-text {
+  position: absolute;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background: white;
+  margin: 5px 2%;
+  padding: 1px 5%;
+  width: auto;
+  border-radius: 15px;
+  opacity: 0.9;
+  top: 0;
+}
+
+.memes .meme .bottom-text {
+  position: absolute;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background: white;
+  margin: 5px 2%;
+  padding: 1px 5%;
+  width: auto;
+  border-radius: 15px;
+  opacity: 0.9;
+  bottom: 0;
+}
+/*# sourceMappingURL=style.css.map */
